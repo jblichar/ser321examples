@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+	</head>
+	<body>
+		<h3>You can make the following GET requests<h3>
+		<ul>
+			<li>/file/sample.html -- returns the content of the file sample.html</li>
+			<li>/json -- returns a json of the /random request</a></li>
+			<li>/random -- returns index.html</a></li>
+			<li>/multiply -- returns product of two values. Default values will be used for missing parameters.</a></li>
+			&emsp;&emsp; host:port/multiply?num1={number}&num2={number}</a><br><br>
+			<li>/github -- returns data of public repos for specified user</a></li>
+			&emsp;&emsp; host:port/github?query=users/{username}/repos</a><br><br>
+			<li>/volume -- returns the volume of a cone. Requires radius and height values.</a></li>
+			&emsp;&emsp; host:port/volume?rad={radius}&h={height}</a><br><br>
+			<li>/currency -- returns the latest currency conversion for provided currencies. Requires valid currency codes. Must be lowercase.</a></li>
+			&emsp;&emsp; host:port/currency?curr={choose currency to be converted}&conv{desired currency}</a><br /><br />
+			&emsp;&emsp; example - host:port/currency?curr=eur&conv=jpy</a><br><br>
+		</ul>
+		<h3>File Structure in www (you can use /file/www/FILENAME):</h3>
+		${links}
+	</body>
+</html>
