@@ -298,9 +298,9 @@ class WebServer {
             Map<String, String> query_pairs = new LinkedHashMap<String, String>();
             query_pairs = splitQuery(request.replace("volume?", ""));
 
-            num1 = Long.parseLong(query_pairs.get("num1"));
+            num1 = Long.parseLong(query_pairs.get("rad"));
              try {
-               num2 = Long.parseLong(query_pairs.get("num2"));
+               num2 = Long.parseLong(query_pairs.get("h"));
 
                try {
                  Double volume = Math.PI * num1 * num1 * (num2 / 3);
